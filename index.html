@@ -19,13 +19,23 @@
             align-items: center;
             height: 100vh; /* 100% of the viewport height */
         }
+        /* Neumorphism-style box */
+        .neumorphism-box {
+            background-color: #e2e8f0; /* Light background color */
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75),
+                        -5px -5px 15px 0px rgba(255,255,255,0.75);
+        }
     </style>
     <title>Minecraft Server Redirect</title>
 </head>
 <body class="dark">
     <div class="center">
-        <p class="text-lg">Click the button below to add the Minecraft server to your server list:</p>
-        <a href="minecraft:?addExternalServer=BoniGantenk|mc.bonicore.my.id:19185" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Minecraft Server</a>
+        <div class="neumorphism-box">
+            <p class="text-lg">Click the button below to add the Minecraft server to your server list:</p>
+            <a href="minecraft:?addExternalServer=BoniGantenk|mc.bonicore.my.id:19185" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Minecraft Server</a>
+        </div>
     </div>
 </body>
 </html>
