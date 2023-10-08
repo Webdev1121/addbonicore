@@ -17,7 +17,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 100% of the viewport height */
+            min-height: 100vh; /* Minimum 100% of the viewport height */
         }
         /* Neumorphism-style box */
         .neumorphism-box {
@@ -34,6 +34,11 @@
         /* Styling for the footer links */
         .footer-links {
             margin-top: 20px;
+            text-align: center;
+        }
+        /* Add spacing between text and button */
+        .btn-spacing {
+            margin-top: 10px;
         }
     </style>
     <title>Minecraft Server Redirect</title>
@@ -43,12 +48,12 @@
         <div class="neumorphism-box">
             <p class="text-lg black-text">Click the button below to add the Minecraft server to your server list:</p>
             <a href="minecraft:?addExternalServer=BoniGantenk|mc.bonicore.my.id:19185" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Minecraft Server</a>
-            
-            <!-- Footer links -->
-            <div class="footer-links mt-6">
-                <p>Contact us: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                <p>Status Page: <a href="https://status.bonicore.my.id" target="_blank">https://status.bonicore.my.id</a></p>
-            </div>
+        </div>
+
+        <!-- Footer links -->
+        <div class="footer-links mt-6">
+            <p>Contact us: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Status Page: <a href="https://status.bonicore.my.id" target="_blank">https://status.bonicore.my.id</a></p>
         </div>
     </div>
 </body>
